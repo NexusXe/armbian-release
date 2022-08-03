@@ -1,8 +1,6 @@
 name: Release
 on:
   push:
-    tags:
-      - "202*" # any tag. GH releases (containing binaries for download) require tags
   commit:
   pull_request:
   push:
