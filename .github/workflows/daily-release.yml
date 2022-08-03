@@ -1,5 +1,5 @@
 name: Create a daily release
-on:
+on: [push, pull_request]
   schedule:
     # Daily at sixteen minutes past midnight UTC
     - cron: '16 0 * * *'
