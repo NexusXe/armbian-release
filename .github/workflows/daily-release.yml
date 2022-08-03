@@ -5,6 +5,8 @@ on:
     - cron: '16 0 * * *'
   push:
   pull_request:
+env:
+    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   create_release:
     runs-on: ubuntu-latest
