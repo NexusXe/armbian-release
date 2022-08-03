@@ -1,8 +1,10 @@
 name: Create a daily release
-on: [push, pull_request]
+on:
   schedule:
     # Daily at sixteen minutes past midnight UTC
     - cron: '16 0 * * *'
+  push:
+  pull_request:
 jobs:
   create_release:
     runs-on: ubuntu-latest
